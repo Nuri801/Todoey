@@ -93,6 +93,7 @@ class TodoListViewController: UITableViewController {
     }
     
     func loadItems() {
+        
         let request : NSFetchRequest<Item> = Item.fetchRequest()
         do {
             itemArray = try context.fetch(request)
